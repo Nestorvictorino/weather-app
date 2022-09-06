@@ -2,7 +2,7 @@ import type { AppProps } from 'next/app'
 import { NextPage } from 'next'
 import { ReactElement, ReactNode } from 'react'
 import '../../public/css/style.css';
-;
+
 
 
 type NextPageWithLayout = NextPage & {
