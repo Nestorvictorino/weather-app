@@ -2338,3 +2338,49 @@ form textarea {
   color: #fff;
   font-size: 1.2rem;
 }
+
+.listStats{
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+
+}
+
+.listStats > span{
+  text-decoration: none;
+  list-style: none;
+  font-size: 1.6rem;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.icons-weather{
+  border-top: 1px solid #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 3.5rem 2rem 0 2rem;
+  align-self: center;
+}
+
+.icon-item-info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 14rem;
+  height: 13rem;
+  background-color: #262936;
+  border-radius: 15px;
+  padding: 1rem;
+}
+
+.icon-info{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}

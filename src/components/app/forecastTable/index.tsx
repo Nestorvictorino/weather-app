@@ -1,6 +1,7 @@
 import React from 'react'
 
 const ForecastTable = () => {
+    const fakeStats = [{ label: 'Max Temperature', value: '13.6C' }, { label: 'Min Temperature', value: '10.6C' }, { label: 'Thermal sensation', value: '13.6C' }, { label: 'Humidity', value: '5%' }, { label: 'Wind Speed', value: '6.17m/s' }];
     return (
         <div className="forecast-table">
             <div className="container">
@@ -15,7 +16,7 @@ const ForecastTable = () => {
                                 {/* <img src="https://images.pexels.com/photos/1980720/pexels-photo-1980720.jpeg" alt="day" style={{ width: '5rem' }} /> */}
                                 <div className='title-container'>
                                     <div className="location">New York</div>
-                                    <div className="date">{new Date().toLocaleDateString()}</div>
+                                    {/* <div className="date">{new Date().toLocaleDateString()}</div> */}
                                 </div>
                                 <div className='temperature-container'>
                                     <div className="degree">
@@ -35,7 +36,43 @@ const ForecastTable = () => {
                             </div>
 
                             <div className='rightSection'>
-                                hola
+                                <div className='listStats'>
+                                    {fakeStats.map((el, i) => (
+                                        <span key={`element-${i}`}>{el.label}: {el.value}</span>
+                                    ))}
+                                </div>
+                                <div className='icons-weather'>
+
+                                    <div className='icon-item-info'>
+                                        <span style={{marginRight:'0', color:'#fff', fontSize:'1.2rem'}}>6/5/2021 15h</span>
+                                        <div className='icon-info'>
+                                            <img src="images/icons/icon-13.svg" alt="" width="48" />
+                                            <p style={{color:'#fff', fontSize:'1.2rem'}}>Lluvia ligera</p>
+                                        </div>
+                                        <div className="degree">23<sup>o</sup>C</div>
+                                    </div>
+
+                                    
+                                    <div className='icon-item-info'>
+                                        <span style={{marginRight:'0', color:'#fff', fontSize:'1.2rem'}}>6/5/2021 15h</span>
+                                        <div className='icon-info'>
+                                            <img src="images/icons/icon-13.svg" alt="" width="48" />
+                                            <p style={{color:'#fff', fontSize:'1.2rem'}}>Lluvia ligera</p>
+                                        </div>
+                                        <div className="degree">23<sup>o</sup>C</div>
+                                    </div>
+
+                                    
+                                    <div className='icon-item-info'>
+                                        <span style={{marginRight:'0', color:'#fff', fontSize:'1.2rem'}}>6/5/2021 15h</span>
+                                        <div className='icon-info'>
+                                            <img src="images/icons/icon-13.svg" alt="" width="48" />
+                                            <p style={{color:'#fff', fontSize:'1.2rem'}}>Lluvia ligera</p>
+                                        </div>
+                                        <div className="degree">23<sup>o</sup>C</div>
+                                    </div>
+
+                                </div>
                             </div>
                         </div>
                     </div>
