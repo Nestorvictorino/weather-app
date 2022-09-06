@@ -7,8 +7,8 @@ const Header = () => {
                 <a href="index.html" className="branding">
                     <img src="images/logo.png" alt="" className="logo" />
                     <div className="logo-type">
-                        <h1 className="site-title">Company name</h1>
-                        <small className="site-description">tagline goes here</small>
+                        <h1 className="site-title">WeatherNess</h1>
+                        <small className="site-description">Be aware from weather</small>
                     </div>
                 </a>
 
@@ -16,19 +16,19 @@ const Header = () => {
                     <button type="button" className="menu-toggle"><i className="fa fa-bars"></i></button>
                     <ul className="menu">
                         <li className="menu-item current-menu-item"><a href="index.html">Home</a></li>
-                        <li className="menu-item"><a href="news.html">News</a></li>
+                        {/* <li className="menu-item"><a href="news.html">News</a></li>
                         <li className="menu-item"><a href="live-cameras.html">Live cameras</a></li>
                         <li className="menu-item"><a href="photos.html">Photos</a></li>
-                        <li className="menu-item"><a href="contact.html">Contact</a></li>
+                        <li className="menu-item"><a href="contact.html">Contact</a></li> */}
                     </ul>
                 </div>
 
                 <div className="mobile-navigation" style={{ display: 'none' }}><ul className="menu">
                     <li className="menu-item current-menu-item"><a href="index.html">Home</a></li>
-                    <li className="menu-item"><a href="news.html">News</a></li>
+                    {/* <li className="menu-item"><a href="news.html">News</a></li>
                     <li className="menu-item"><a href="live-cameras.html">Live cameras</a></li>
                     <li className="menu-item"><a href="photos.html">Photos</a></li>
-                    <li className="menu-item"><a href="contact.html">Contact</a></li>
+                    <li className="menu-item"><a href="contact.html">Contact</a></li> */}
                 </ul></div>
 
             </div>
