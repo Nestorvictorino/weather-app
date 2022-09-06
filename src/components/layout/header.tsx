@@ -14,22 +14,22 @@ const Header = () => {
 
                 <div className="main-navigation">
                     <button type="button" className="menu-toggle"><i className="fa fa-bars"></i></button>
-                    <ul className="menu">
-                        <li className="menu-item current-menu-item"><a href="index.html">Home</a></li>
+                    {/* <ul className="menu"> */}
+                        {/* <li className="menu-item current-menu-item"><a href="index.html">Home</a></li> */}
                         {/* <li className="menu-item"><a href="news.html">News</a></li>
                         <li className="menu-item"><a href="live-cameras.html">Live cameras</a></li>
                         <li className="menu-item"><a href="photos.html">Photos</a></li>
                         <li className="menu-item"><a href="contact.html">Contact</a></li> */}
-                    </ul>
+                    {/* </ul> */}
                 </div>
 
-                <div className="mobile-navigation" style={{ display: 'none' }}><ul className="menu">
-                    <li className="menu-item current-menu-item"><a href="index.html">Home</a></li>
+                {/* <div className="mobile-navigation" style={{ display: 'none' }}><ul className="menu"> */}
+                    {/* <li className="menu-item current-menu-item"><a href="index.html">Home</a></li> */}
                     {/* <li className="menu-item"><a href="news.html">News</a></li>
                     <li className="menu-item"><a href="live-cameras.html">Live cameras</a></li>
                     <li className="menu-item"><a href="photos.html">Photos</a></li>
                     <li className="menu-item"><a href="contact.html">Contact</a></li> */}
-                </ul></div>
+                {/* </ul></div> */}
 
             </div>
         </div>
