@@ -344,10 +344,12 @@ form textarea {
   height: 0;
 }
 
-@media (min-width: 768px) {
+
+@media only screen and (min-width: 768px) {
   .container {
     width: 750px;
   }
+
 }
 
 @media (min-width: 992px) {
@@ -1753,6 +1755,36 @@ form textarea {
   .forecast-container .forecast.today {
     display: block;
     width: 100%;
+  }
+
+  .forecast-content{
+    flex-direction: column !important;
+    padding: 0;
+  }
+
+  .leftSection{
+    width: 100% !important;
+
+  }
+
+  .rightSection{
+    width: 100% !important;
+    overflow: scroll !important;
+  }
+  
+  .icons-weather{
+    gap: 1rem !important;
+    padding: 1rem !important;
+    flex-direction: column !important;
+
+  }
+
+  .icon-item-info{
+    width: 100% !important;
+  }
+
+  .icon-info{
+    justify-content: space-around !important;
   }
 }
 
