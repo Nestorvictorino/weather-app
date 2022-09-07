@@ -1,7 +1,29 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const ForecastTable = () => {
     const fakeStats = [{ label: 'Max Temperature', value: '13.6C' }, { label: 'Min Temperature', value: '10.6C' }, { label: 'Thermal sensation', value: '13.6C' }, { label: 'Humidity', value: '5%' }, { label: 'Wind Speed', value: '6.17m/s' }];
+
+    let urlWeather = 'https://api.openweathermap.org/data/2.5/weather?appid=1ab6cf3a1ca744dbb95b5780800470ef&lang=es';
+    let cityUrl = '&q=' 
+
+    let urlForeCast = 'https://api.openweathermap.org/data/2.5/forecast?appid=1ab6cf3a1ca744dbb95b5780800470ef&lang=es'
+
+    const [weather, setWeather] = useState<Array<any>>([])
+
+    const [forecast, setForecast] = useState<Array<any>>([])
+
+    const [loading, setLoading] = useState<boolean>(false)
+
+    const [show, setShow] = useState<boolean>(false)
+
+    const [location, setLocation] = useState<string>('')
+
+    const getLocation = async(loc: string) => {
+        setLoading(true)
+        setLocation(loc)
+        await fetch
+    }
+
     return (
         <div className="forecast-table">
             <div className="container">
