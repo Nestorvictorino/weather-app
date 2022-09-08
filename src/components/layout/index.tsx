@@ -3,7 +3,7 @@ import Header from './header'
 
 const Layout = ({ children }: LayoutPropsI) => {
     return (
-        <div className='site-content' style={{height:'100vh'}}>
+        <div className='site-content'>
             <Header />
             {children}
         </div>

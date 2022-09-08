@@ -1786,6 +1786,20 @@ form textarea {
   .icon-info{
     justify-content: space-around !important;
   }
+
+  .forecast-container .forecast.today .degree .num {
+    font-size: 90px;
+    font-size: 3.9rem;
+    margin-right: 30px;
+  }
+
+  .site-content{
+    height: 123vh !important;
+  }
+}
+
+.site-content{
+  height: 100vh;
 }
 
 .forecast-container .forecast .forecast-header {
