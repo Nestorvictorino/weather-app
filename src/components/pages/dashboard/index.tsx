@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import { toast, ToastContainer } from 'react-toastify';
+import { setToastMessage, toastAlert } from '../../../helpers/toastify.helper';
 import { forecastI, weatherI } from '../../../interfaces/forecast/forecast.interface';
 import ForecastTable from '../../app/forecastTable'
 import Search from '../../app/search'
@@ -27,6 +29,13 @@ const Dashboard = () => {
             setWeather(weatherData);
         }).catch((err) => {
             console.log(err);
+            setToastMessage('City not found', {
+                type: 'error',
+                position: 'top-center',
+                style: {
+                    background: '#323544'
+                }
+            })
             setLoading(false);
         })
 
@@ -43,6 +52,7 @@ const Dashboard = () => {
 
         }).catch((err) => {
             console.log(err);
+
             setLoading(false);
         })
 
@@ -53,7 +63,8 @@ const Dashboard = () => {
             <div className="hero" data-bg-image="images/banner.png" style={{ backgroundImage: 'url(/images/banner.png)' }}>
                 <Search getLocation={getLocation} />
             </div>
-           {!loading && <ForecastTable weather={weather} forecast={forecast} />}
+            {!loading && <ForecastTable weather={weather} forecast={forecast} />}
+            <ToastContainer />
         </>
     )
 }
