@@ -40,7 +40,7 @@ const ForecastTable = ({ weather, forecast }: forecastPropsI) => {
                                                 <span style={{ marginRight: '0', color: '#fff', fontSize: '1.2rem' }}>{el.dt_txt}</span>
                                                 <div className='icon-info'>
                                                     <img src="images/icons/icon-13.svg" alt="" width="48" />
-                                                    <p style={{ color: '#fff', fontSize: '1.2rem' }}>{el.weather[0].description}</p>
+                                                    <p style={{ color: '#fff', fontSize: '1.2rem', marginBottom:'0', marginTop:'1rem'}}>{el.weather[0].description}</p>
                                                 </div>
                                                 <div className="degree">{Math.ceil((el?.main?.temp || 0) - 274.15).toFixed(0)}<sup>o</sup>C</div>
                                             </div> 

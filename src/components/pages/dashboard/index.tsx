@@ -29,8 +29,6 @@ const Dashboard = () => {
             if (!res.ok) throw { res }
             return res.json();
         }).then((weatherData) => {
-            // console.log(weatherData);
-
             setWeather(weatherData);
         }).catch((err) => {
             console.log(err);
@@ -46,7 +44,6 @@ const Dashboard = () => {
             if (!res.ok) throw { res }
             return res.json();
         }).then((forecastData) => {
-            // console.log(forecastData);
             setForecast(forecastData);
 
             setLoading(false)
