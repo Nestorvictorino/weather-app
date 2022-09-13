@@ -1759,7 +1759,7 @@ form textarea {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    height: 74rem !important;
+    height: auto !important;
   }
 
   .forecast-container .forecast.today {
