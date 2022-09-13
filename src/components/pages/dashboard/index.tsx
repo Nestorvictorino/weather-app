@@ -15,13 +15,8 @@ const Dashboard = () => {
 
     const [loading, setLoading] = useState<boolean>(false)
 
-    const [show, setShow] = useState<boolean>(false)
-
-    const [location, setLocation] = useState<string>('')
-
     const getLocation = async (loc: string) => {
         setLoading(true)
-        setLocation(loc)
 
         urlWeather = urlWeather + cityUrl + loc
 
@@ -33,7 +28,6 @@ const Dashboard = () => {
         }).catch((err) => {
             console.log(err);
             setLoading(false);
-            setShow(false)
         })
 
         //Forecast
@@ -45,14 +39,11 @@ const Dashboard = () => {
             return res.json();
         }).then((forecastData) => {
             setForecast(forecastData);
-
             setLoading(false)
-            setShow(true)
 
         }).catch((err) => {
             console.log(err);
             setLoading(false);
-            setShow(false)
         })
 
     }
@@ -62,7 +53,7 @@ const Dashboard = () => {
             <div className="hero" data-bg-image="images/banner.png" style={{ backgroundImage: 'url(/images/banner.png)' }}>
                 <Search getLocation={getLocation} />
             </div>
-            <ForecastTable weather={weather} forecast={forecast} />
+           {loading && <ForecastTable weather={weather} forecast={forecast} />}
         </>
     )
 }
