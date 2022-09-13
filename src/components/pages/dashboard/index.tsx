@@ -53,7 +53,7 @@ const Dashboard = () => {
             <div className="hero" data-bg-image="images/banner.png" style={{ backgroundImage: 'url(/images/banner.png)' }}>
                 <Search getLocation={getLocation} />
             </div>
-           {loading && <ForecastTable weather={weather} forecast={forecast} />}
+           {!loading && <ForecastTable weather={weather} forecast={forecast} />}
         </>
     )
 }
