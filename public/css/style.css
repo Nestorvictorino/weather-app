@@ -1779,7 +1779,6 @@ form textarea {
 
   .rightSection{
     width: 100% !important;
-    overflow: scroll !important;
   }
   
   .icons-weather{
